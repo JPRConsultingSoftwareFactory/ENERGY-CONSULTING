@@ -10,6 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
+  
   <link href="assets/img/logoNegrosinfondo2.png" rel="icon" />
   <link href="assets/img/STyC/Logotipo_Tlaxcala_a_color.png" rel="apple-touch-icon">
 
@@ -40,29 +41,32 @@
 
 <body>
 
-   <!-- ======= Header ======= -->
+ 
+
+  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo flex-column">
+<h1 class="logo flex-column">
             <a href="index.html">
           <img src="assets/img/logoNegrosinfondo2.png" alt="Logo ">
             </a> 
         </h1>
 
+
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="index.html">Inicio</a></li>
-          <li class=" nav-link dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
-            <ul >
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
               <li><a class="dropdown-item" href="index.html#boxes">Redes de Conocimiento</a></li>
               <li><a class="dropdown-item" href="index.html#boxes">Costo - Beneficio</a></li>
             </ul>
           </li>
-          <li class="nav-link dropdown">
+          <li class="dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portafolio de Servicios</a>
-            <ul >
+            <ul>
               <li><a class="dropdown-item" href="metalurgia.html">Metalurgia y Corrosion</a></li>
               <li><a class="dropdown-item" href="mecanica.html">Integridad Mecanica</a></li>
               <li><a class="dropdown-item" href="software.html">Software</a></li>
@@ -75,9 +79,8 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
         
       </nav><!-- .navbar -->
+    
     </div>
-
-
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
@@ -85,110 +88,95 @@
   
   <!-- End Hero -->
 
-
+  <a href="services.html" class="btn-float">
+    Regresar a servicios
+  </a>
  
+<style>
+  .shop {
+     /* margin-top: 90px; */
+     /* width: 63%; */
+     justify-items: center;
+     color: black;
+     /* background: #fefdf9; */
+     border-top: #f2f1ed solid 1px;
+     border-bottom: #f2f1ed solid 1px;
+}
 
+
+
+.shop .max_width {
+  justify-items: center;
+     text-align: left;
+     color: black;
+     /* background: #0f1313; */
+     border-radius: 90px;
+     height: 100%;
+     padding-top: 86px;
+     padding-left: 50px;
+     padding-bottom: 90px;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.shop .titlepage {
+     max-width: 612px;
+     width: 100%;
+}
+
+.shop .titlepage h2 {
+     color: #000;
+     font-size: 400px;
+     border-bottom: #fff solid 1px;
+     padding-bottom: 10px;
+     float: center;
+     clear: both;
+}
+
+.shop .titlepage p {
+     color: #000;
+     font-size: 100px;
+     line-height: 30px;
+     padding: 40px 0px 80px 0;
+     width: 100%;
+}
+
+
+.shop .titlepage .read_more {
+     color: #fff !important
+}
+
+.conteiner {
+ display: flex; 
+justify-content: center;
+align-items: center;
+}
+
+@media (max-width: 768px) {
+  .shop .titlepage h2 {
+    font-size: 100px; /* Tamaño de fuente para pantallas pequeñas */
+  }
+
+  .shop .titlepage p {
+    font-size: 50px;
+  }
+
+}
+
+</style>
 <!-- End Icon Boxes Section -->
-<br><br>
-<a href="services.html" class="btn-float">
-  Regresar a servicios
-</a>
-<section class="bg-light">
-  <div class="container py-5">
-      <div class="row text-center py-3">
-          <div class="col-lg-6 m-auto" data-aos="fade-right">
-              <h1 class="h1">Metalurgia y corrosión</h1>
-              <p>
-              </p>
-          </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-4 mb-4" data-aos="fade-up">
-            <div class="card h-100">
-              <a href="#">
-                <img src="./assets/img/proteccion.jpg" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                
-                <a href="#" class="h2 text-decoration-none text-dark"> PROTECCIÓN CATÓDICA</a>
-                <p class="card-text">
-                  <ul>
-                  <li><strong>Inspecciones indirectas (CIS,DCVG,pH,Resistivad).</strong></li>
-      <li>Instalación de camas anódicas convencionales y de pozo profundo</li>
-      <li>External Corrosión Direct Asessment.</li>
-      <li>Internal Corrosión Direct Asessment.</li>
-      <li>Evaluación de sistemas de protección catódica.</li>
-      </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 mb-4" data-aos="fade-left">
-            <div class="card h-100">
-              <a href="#">
-                <img src="./assets/img/inspec.jpg" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                
-                <a href="#" class="h2 text-decoration-none text-dark">INSPECCIÓN DE ACTIVOS</a>
-                <p class="card-text">
-                  <ul>
-                  <li>Ensayos no destructivos: Ultrasonido (haz recto y angular), inspección visual, partículas magnéticas, etc.</li>
-      <li>Ondas guiadas.</li>
-      <li>Otras tecnologías.</li>
-     </ul> 
-                </p>
-              </div>
-            </div>
-          </div>
-
-         <div class="col-12 col-sm-6 col-md-4 mb-4" data-aos="fade-up">
-            <div class="card h-100">
-              <a href="#">
-                <img src="./assets/img/tanques-img.jpg" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                
-                <a href="#" class="h2 text-decoration-none text-dark">EVALUACIÓN E INSPECCIÓN DE TANQUES</a>
-                <p class="card-text">
-                  <ul>
-       <li>Inspección de fondo de tanque con tecnología <strong>MFL (floor scan).</strong></li>
-      <li>Redondez y verticalidad utilizando 3D laser scan.</li>
-      <li>Ensayos no destructivos: Ultrasonido (haz recto y angular), inspección visual, partículas magnéticas, etc.</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-
- <div class="col-12 col-sm-6 col-md-4 mb-4" data-aos="fade-up">
-            <div class="card h-100">
-              <a href="#">
-                <img src="assets/img/consultora.webp" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                
-                <a href="#" class="h2 text-decoration-none text-dark">CONSULTORÍA</a>
-                <p class="card-text">
-                  <ul>
-                <li>Factibilidad de inspecciones.</li>
-      <li>Temas específicos de corrosión.</li>
-      <li>Re ingeniería de corrosión.</li>
-      </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-  </div>
+<section class="conteiner">
+  <div class="shop">
+             <div class="max_width">
+                <div class="titlepage">
+                   <h2>404</h2>
+                   <p>Page Not</p> 
+                   <p>Found</p>
+                </div>
+             </div>
+ </div>
 </section>
-    
-      <!-- ======= Contact Section ======= -->
-    
+   
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -227,15 +215,15 @@
 </div>
 
             <div class="social-links mt-3">
-              <a href="https://www.linkedin.com/company/energy-consulting-and-data-analytics/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/energy-consulting-and-data-analytics/"   
+            target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     
-        <div style="display: flex; justify-content: center; align-items: center;">
+       <div style="display: flex; justify-content: center; align-items: center;">
         <a  style="color:white; width: 200px; margin: 0 auto;" href="https://jprconsulting-mx.000webhostapp.com/index.html" target="_blank">Developed by <strong>JPRConsulting</strong></a>
       </div>
       <br/>

@@ -10,7 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/STyC/LogoGobierno.png" rel="icon">
+
+  <link href="assets/img/logoNegrosinfondo2.png" rel="icon" />
   <link href="assets/img/STyC/Logotipo_Tlaxcala_a_color.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -30,7 +31,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script type="text/javascript" src="assets/js/jsCustomer/spinnerLoad.js"></script>
   <!-- =======================================================
   * Template Name: Anyar
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -45,9 +45,15 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo flex-column"><img src="assets/img/logoNegrosinfondo2.png" ><a href="index.html"></a> </h1>
 
-       <nav id="navbar" class="navbar">
+   <h1 class="logo flex-column">
+            <a href="index.html">
+          <img src="assets/img/logoNegrosinfondo2.png" alt="Logo ">
+            </a> 
+        </h1>
+
+
+      <nav id="navbar" class="navbar">
           <ul>
             <li>
               <a class="nav-link scrollto" href="index.html">Inicio</a>
@@ -80,7 +86,11 @@
       <center>
       <div class="loader-spinner"></div>
     </center>
-      <img src="assets/img/logoNegrosinfondo2.png" alt="Logo" class="loader-logo" width="10%">
+     <video autoplay loop class="loader-logo" width="60%">
+              <source src="assets/img/logo.mp4" type="video/mp4">
+            </video>  
+
+            <!-- <img src="assets/img/logoNegrosinfondo2.png" alt="Logo" class="loader-logo" width="10%"> -->
       <div class="loader-text">Cargando...</div>
     </div>
   </div>
@@ -89,14 +99,27 @@
 
 <!-- End Icon Boxes Section -->
 <br><br><br><br><br><br>
+<script>
+  window.onload = function() {
+// Mostrar la pantalla de carga
+const loader = document.getElementById('loader');
+loader.style.display = 'flex';
 
+// Simular un retraso de 1.5 segundos
+setTimeout(function() {
+  // Ocultar la pantalla de carga y mostrar el contenido de la página
+  loader.style.display = 'none';
+  document.getElementById('page-content').style.display = 'block';
+}, 6000);
+};
+</script>
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Nuestros Servicios</h2>
-          <p>Nuestro portafolio de servicios fue desarrollado con el objetivo de contribuir con nuestros clientes para el análisis de información,riesgo,integridad,inspección,mantenimiento y mitigación, en activos de transporte y distribucion de hidrocarburos.</p>
+          <p>Nuestro portafolio de servicios fue desarrollado con el objetivo de contribuir con nuestros clientes para el análisis de información, riesgo, integridad, inspección, mantenimiento y mitigación, en activos de transporte y distribución de hidrocarburos.</p>
         </div>
 
        <div class="row">
@@ -106,7 +129,7 @@
               <div class="icon-box" title="Da clic aquí para más información">
                 <i class="bi bi-card-checklist"></i>
                 <h4 class="verde">Metalurgia y Corrosion</h4>
-                <p>Evaluacion, consultoria y soluciones para disminuir los procesos corrosion que suceden en activos de transporte de hidrocarburos.</p>
+                <p>Evaluación, consultoría y soluciones para disminuir los procesos corrosión que suceden en activos de transporte de hidrocarburos.</p>
               </div>
             </a>
           </div>
@@ -114,8 +137,8 @@
     <a href="mecanica.html">
       <div class="icon-box" title="Da clic aquí para más información">
         <i class="bi bi-bar-chart"></i>
-        <h4 class="verde">Intergridad Mecanica</h4>
-        <p>Desarrollo de software especializado en temas relacionados con NOM-009, NOM-007 y NOM-003.</p>
+        <h4 class="verde">Intergridad Mecánica</h4>
+        <p>Evaluación, análisis de información, consultoría y soluciones para aumentar la vida útil de sus activos.</p>
       </div>
     </a>
   </div>
@@ -133,7 +156,7 @@
       <div class="icon-box" title="Da clic aquí para más información">
         <i class="bi bi-brightness-high"></i>
         <h4 class="verde">BigData, Realidad Mixta y Bussiness Inteligence</h4>
-        <p>Análisis de información, desarrollo de tecnologias de inspeccion extendidas, software para toma de decisiones.</p>
+        <p>Análisis de información, desarrollo de tecnologías de inspección extendidas, software para toma de decisiones.</p>
       </div>
     </a>
   </div>
@@ -186,17 +209,17 @@
 </div>
 
             <div class="social-links mt-3">
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/energy-consulting-and-data-analytics/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-    
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <a  style="color:white; width: 200px; margin: 0 auto;" href="https://jprconsulting-mx.000webhostapp.com/index.html" target="_blank">Developed by <strong>JPRConsulting</strong></a>
       </div>
-      
+      <br/>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>

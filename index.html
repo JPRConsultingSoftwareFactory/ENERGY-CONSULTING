@@ -5,15 +5,17 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>ECDA</title>
-    <meta content="" name="description" />
+    <meta content="Crear desarrollo de soluciones y tecnología utilizando relaciones comerciales con empresas líderes en el mercado (nacional e internacional)." name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/STyC/LogoGobierno.png" rel="icon" />
+    <link href="assets/img/logoNegrosinfondo2.png" rel="icon" />
     <link
       href="assets/img/STyC/Logotipo_Tlaxcala_a_color.png"
       rel="apple-touch-icon"
     />
+
+    <link rel="preload" href="assets/img/logo.mp4" as="video" type="video/mp4" fetchpriority="high">
 
     <!-- Google Fonts -->
     <link
@@ -45,10 +47,10 @@
     <link href="assets/css/style-clientes.css" rel="stylesheet" />
     <link href="assets/css/style-contador-hero.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
+    <!-- <script
       type="text/javascript"
       src="assets/js/jsCustomer/spinnerLoad.js"
-    ></script>
+    ></script> -->
     <!-- =======================================================
   * Template Name: Anyar
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -59,28 +61,16 @@
   </head>
 
   <body>
-    <!-- ======= Top Bar ======= 
-  <div id="topbar" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
-      </div>
-      <div class="cta d-none d-md-block">
-        <a href="#about" class="scrollto">Get Started</a>
-      </div>
-    </div>
-  </div>-->
 
-    <!-- ======= Header ======= -->
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
         <h1 class="logo flex-column">
-          <a href="index.html"
-            ><img src="assets/img/logoNegrosinfondo2.png"
-          /></a>
+            <a href="index.html">
+          <img src="assets/img/logoNegrosinfondo2.png" alt="Logo ">
+            </a> 
         </h1>
+
         <nav id="navbar" class="navbar">
           <ul>
             <li>
@@ -111,19 +101,31 @@
 
     <!-- End Icon Boxes Section -->
     <br /><br /><br /><br /><br /><br />
+<script>
+  window.onload = function() {
+// Mostrar la pantalla de carga
+const loader = document.getElementById('loader');
+loader.style.display = 'flex';
 
+// Simular un retraso de 1.5 segundos
+setTimeout(function() {
+  // Ocultar la pantalla de carga y mostrar el contenido de la página
+  loader.style.display = 'none';
+  document.getElementById('page-content').style.display = 'block';
+}, 6000);
+};
+</script>
     <section>
       <div id="loader">
         <div class="loader-content">
           <center>
             <div class="loader-spinner"></div>
           </center>
-          <img
-            src="assets/img/logoNegrosinfondo2.png"
-            alt="Logo"
-            class="loader-logo"
-            width="10%"
-          />
+            <video autoplay loop class="loader-logo" width="60%">
+              <source src="assets/img/logo.mp4" type="video/mp4">
+            </video>  
+
+         
           <div class="loader-text">Cargando...</div>
         </div>
       </div>
@@ -174,11 +176,7 @@
                     </div>
                     <h4 class="title"><a href="">Nosotros</a></h4>
                     <p class="description text-justify">
-                      Creada en 2020 por un grupo de Ingenieros Metalurgicos,
-                      Quimicos y Mecanicos, con mas de 100 años de experiencia
-                      conjunta y con el objetivo de proveer a la industria
-                      energetica del pais de soluciones inovadoras y de ultima
-                      tecnologia.
+                      Creada en 2020 por un grupo de Ingenieros Metalúrgicos, Químicos y Mecánicos, con más de 100 años de experiencia conjunta y con el objetivo de proveer a la industria energética del país de soluciones innovadoras y de última tecnología.
                     </p>
                   </div>
                 </div>
@@ -199,9 +197,7 @@
                     </div>
                     <h4 class="title"><a href="">Redes de Conocimiento</a></h4>
                     <p class="description text-justify">
-                      Crear desarollo de soluciones y tecnologia utilizando
-                      relaciones comerciales con empresas lideres en el mercado
-                      (nacional e internacional)
+                      Crear desarrollo de soluciones y tecnología utilizando relaciones comerciales con empresas líderes en el mercado (nacional e internacional).
                     </p>
                     <h4 class="title"><a href="">Costo - Beneficio</a></h4>
                     <p class="description text-justify">
@@ -216,56 +212,6 @@
         </div>
       </section>
 
-      <!-- ======= About Us Section ======= -->
-      <!--<section id="about" class="about">
-<div class="container" data-aos="fade-up">
-
-<div class="section-title">
-<h2>Nosotros</h2>
-<p></p>
-</div>
-
-<div class="row content">
-<div class="col-lg-6">
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-  magna aliqua.
-</p>
-<ul>
-  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-</ul>
-</div>
-<div class="col-lg-6 pt-4 pt-lg-0">
-<p>
-  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-  culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<a href="#" class="btn-learn-more">Learn More</a>
-</div>
-</div>
-
-</div>
-</section>--><!-- End About Us Section -->
-
-      <!-- ======= Clients Section ======= -->
-      <!-- 
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="https://img.genial.ly/63cd64e406e695001157da4b/6f415b1f-5c61-4f69-93fb-ba3965451031.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="https://img.genial.ly/63cd64e406e695001157da4b/614f0dcc-89df-45b5-9e1e-3b9755b4b3c5.jpeg" class="img-fluid" alt=""></div>
-            </div>
-          <div class="swiper-pagination"></div>
-          <h1>Nuestras alianzas estrategicas</h1>
-        </div>
-
-      </div> -->
-
       <section id="clients" class="clients">
         <div class="section-title">
           <h2>EMPRESAS QUE HAN CONFIADO EN NOSOTROS</h2>
@@ -276,14 +222,16 @@
           <div class="galeria">
             <div class="swiper-slide">
               <img
-                src="assets/img/clientes/gasnatural.png"
+                src="assets/img/clientes/engie.png"
                 class=""
                 alt=""
                 width="120%"
               />
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/clientes/engie.png" class="" alt="" />
+              <img src="assets/img/clientes/gasnatural.png" class="imgGasNatural" alt="" 
+              height="" 
+              />
             </div>
             <div class="swiper-slide">
               <img src="assets/img/clientes/citrofrut.jpeg" class="" alt="" />
@@ -295,11 +243,6 @@
                 alt=""
               />
             </div>
-            <!-- <div class="swiper-slide"><img src="assets/img/cenegas.jpeg" class="iconcc" alt=""></div> -->
-            <!-- <div class="swiper-slide"><img src="assets/img/engie.svg" class="iconc" alt=""></div> -->
-            <!-- <div class="swiper-slide"><img src="assets/img/engie.svg" class="iconc" alt=""></div> -->
-            <!-- </div> -->
-            <!-- <div class="swiper-pagination"></div> -->
           </div>
         </div>
       </section>
@@ -309,34 +252,37 @@
         <div class="statistic-container">
           <div class="statistic">
             <h3>m² ductos inspeccionados</h3>
-            <p class="" data-target="11002">11002</p>
+            <p class="count-plus" data-target="11002"></p>
           </div>
 
           <div class="statistic">
             <h3>m² ductos rehabilitados</h3>
-            <p class="count" data-target="260">7</p>
+            <p class="count" data-target="2607"></p>
           </div>
 
           <div class="statistic">
             <h3>Satisfacción del cliente</h3>
-            <p class="count" data-target="99">99</p>
+            <p class="count" data-target="99"></p>
           </div>
-
+          </div>
+        
+         <div class="statistic-container">
           <div class="statistic">
             <h3>No. de Proyectos desde nuestra fundación</h3>
-            <p class="count" data-target="26">26</p>
+            <p class="count" data-target="26"></p>
           </div>
 
           <div class="statistic">
             <h3>Atracción de nuevos talentos (convenios con universidades)</h3>
-            <p class="count" data-target="5">5</p>
+            <p class="count" data-target="5"></p>
           </div>
 
           <div class="statistic">
-            <h3>Alianzas estratégicas con otros páises</h3>
-            <p class="count" data-target="1">1</p>
+            <h3>Alianzas estratégicas con otros </br>páises</h3>
+            <p class="count" data-target="1"></p>
           </div>
 
+          
         </div>
       </div>
       <script>
@@ -354,12 +300,12 @@
           }
         }, stepTime);
       }
-  
-      // Animar los números cuando se desplazan a la vista del usuario
+ 
+        // Animar los números cuando se desplazan a la vista del usuario
       function animateStatistics() {
         $(".count").each(function() {
           let target = $(this).attr("data-target");
-          animateValue(this, 0, target, 10000);
+          animateValue(this, 0, target, 7000);
         });
       }
   
@@ -367,7 +313,12 @@
       $(window).on("scroll", function() {
         let statisticsSection = $(".statistics-section");
         if (isElementInViewport(statisticsSection)) {
-          animateStatistics();
+
+          variable += 1;
+          if (variable == 1){
+           animateStatistics();
+           startAnimation();
+          }
         }
       });
   
@@ -383,243 +334,38 @@
         );
       }
   
+
+
+      const countElement = document.querySelector('.count-plus');
+const targetNumber = 11002;
+const duration = 14000; // 7 segundos en milisegundos
+
+let startTime;
+
+function startCounting(timestamp) {
+  if (!startTime) startTime = timestamp;
+  const elapsedTime = timestamp - startTime;
+  
+  if (elapsedTime >= duration) {
+    countElement.textContent = targetNumber;
+  } else {
+    const progress = (elapsedTime / duration) * targetNumber;
+    countElement.textContent = Math.floor(progress);
+    requestAnimationFrame(startCounting);
+  }
+}
+
+function startAnimation() {
+  requestAnimationFrame(startCounting);
+}
+
+let variable = 0;
+startAnimation();
       // Animar los números al cargar la página si ya están en la vista
-      animateStatistics();
+animateStatistics();
       </script>
 
-      <!-- ======= Services Section ======= -->
-
-      <!-- End Services Section -->
-
-      <!-- ======= Cta Section ======= -->
-      <!--
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Inspeccion  de estacion de compresión</h3>
-              <p>Inspeccion y rehabilitacion de interfases en estacion de compresion.</p>
-              <p>Inspeccion con buzos de tanques contra incendio en servicio</p>
-              <p>Rehabilitacion de recubrimiento en defectos detectados por DCVG.</p>
-              <p>Inspeccion y analisis de integridad de calentador de gas.</p><br>s
-              <img src="https://img.genial.ly/63cd64e406e695001157da4b/68fc2ae5-90d1-40b8-a9f7-fdfedcb758da.png" class="img-fluid" alt="">
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-      <section id="cta" class="cta">
-        <div class="container">
-  
-          <div class="row" data-aos="zoom-in">
-            <div class="col-lg-9 text-center text-lg-start">
-              <h3>Software QPRO-QUASSET</h3>
-                <p>Desarrollo de software para evaluacion de clases de localizacion y zonas de altas consecuencias.</p><br>
-                <img src="https://img.genial.ly/63cd64e406e695001157da4b/33281a37-7505-476d-b56b-1162365eb404.png" class="img-fluid" alt="">
-              </ol>
-            </div>
-          </div>
-        </div>
-    </section>
-  -->
-      <!-- End Cta Section -->
-
-      <!-- ======= Portfoio Section ======= -->
-
-      <!-- End Portfoio Section -->
-
-      <!-- ======= Team Section ======= -->
-
-      <!-- <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Fundador</h2>
-          <p>Quien nos lidera en nuestro proyecto son:</p>
-        </div>
-
-        <div class="row">
-<center>
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="https://img.genial.ly/63cd64e406e695001157da4b/1f6c84e7-e899-411d-b2f3-30ec5d2db162.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <left>
-                <h4>Carlos Alberto Mares Nava</h4>
-                <span>Key Account Manager</span>
-                <p>Ingeniero Químico Metalúrgico (UNAM/FQ)</p>
-                <p>Maestría en Alta Dirección (UNAM-FQ)</p>
-                <p>15 años trabajando en teorías de corrosión, integridad, inspección, big data y realidad virtual </p>
-                </left>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </center>
-          </div>
-
-        </div>
-
-      </div>
-    </section>  -->
-
-      <!-- End Team Section -->
-
-      <!-- ======= Pricing Section ======= -->
-      <!-- <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>-->
-
-      <!-- End Pricing Section -->
-
-      <!-- ======= Frequently Asked Questions Section ======= -->
-      <!--<section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </section>-->
-      <!-- End Frequently Asked Questions Section -->
-
+ 
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
@@ -636,7 +382,7 @@
               <div class="info">
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
-                  <h4>Direccion:</h4>
+                  <h4>Dirección:</h4>
                   <p><strong>Centro: Av Juarez 65, Tlaxcala Centro.</strong></p>
                   <p>
                     <strong
@@ -660,7 +406,7 @@
 
                 <div class="phone">
                   <i class="bi bi-phone"></i>
-                  <h4><strong>Telefono:</strong></h4>
+                  <h4><strong>Teléfono:</strong></h4>
                   <p><strong>22-15-75-10-32</strong></p>
                 </div>
               </div>
@@ -722,11 +468,11 @@
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">
-                    Your message has been sent. Thank you!
+                    Tu mensaje fue enviado. ¡Gracias!
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Enviar Mensaje</button>
+                  <button type="submit" name="enviar" >Enviar Mensaje</button>
                 </div>
               </form>
             </div>
@@ -785,8 +531,10 @@
           </div>
         </div>
       </div>
-
-      <div class="container"></div>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <a  style="color:white; width: 200px; margin: 0 auto;" href="https://jprconsulting-mx.000webhostapp.com/index.html" target="_blank">Developed by <strong>JPRConsulting</strong></a>
+      </div>
+      <br/>
     </footer>
     <!-- End Footer -->
 
